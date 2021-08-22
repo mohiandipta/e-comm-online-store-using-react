@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './App.css';
 // react-router-dom
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // pages
@@ -11,9 +11,12 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
+// components
+import Header from "./components/Header"
 
 const App = () => (
   <Router>
+    <Header />
     <Switch>
       <Route exact path="/">
         <Home />
@@ -23,6 +26,9 @@ const App = () => (
       </Route>
       <Route path="/cart">
         <Cart />
+      </Route>
+      <Route path="/product">
+        <Products />
       </Route>
       <Route path="*">
         <Error />

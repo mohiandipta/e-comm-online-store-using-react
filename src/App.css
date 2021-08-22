@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +39,45 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: -40px;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  font-weight: 700;
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+header ul li :hover {
+  color: dodgerblue;
 }
