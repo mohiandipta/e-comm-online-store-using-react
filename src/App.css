@@ -91,3 +91,8 @@ header ul li :hover {
   text-decoration: none;
   background-color: #61dafb;
 }
+
+.about {
+  height: 550px;
+  width: 550px;
+}
