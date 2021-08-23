@@ -69,7 +69,7 @@ header ul li {
 
 header ul li a {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   position: relative;
   display: inline-block;
   margin: 0px 10px;
@@ -95,4 +95,29 @@ header ul li :hover {
 .about {
   height: 550px;
   width: 550px;
+}
+
+.banner-img {
+  margin-top: -50px;
+  height: 850px;
+  width: 1920px;
+}
+
+.banner {
+  color: #ffffff;
+  margin-top: -420px;
+  margin-left: -1200px;
+}
+
+.btn-hero {
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 7px;
+  margin-top: 15px;
+  /* margin-left: -1200px; */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: dodgerblue;
+  display: inline-block;
 }

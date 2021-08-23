@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import Hero from '../components/Hero'
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <h4>Home</h4>
+                <><Hero>
+                    <Link to="/products" className="btn-hero">
+                        our product
+                    </Link>
+                </Hero></>
+
             </div>
         );
     }
