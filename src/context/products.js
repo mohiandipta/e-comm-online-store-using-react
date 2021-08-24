@@ -4,13 +4,14 @@ import React from 'react';
 
 export const ProductContext = React.createContext();
 
-//Provider, Consumer, useContwct()
+//Provider, Consumer, useContext()
 
 const ProductProvider = ({ children }) => {
-    const greeting = "hello";
-    const product = { id: 1, title: "product name" }
+    const [loading, setLoading] = React.useState(false);
+    const [products, setProducts] = React.useState([]);
+    const [featured, setFeatured] = React.useState([]);
     return (
-        <ProductContext.Provider value={{ greeting, product }}>
+        <ProductContext.Provider value={{ products, loading, featured }}>
             {children}
         </ProductContext.Provider>
     );
