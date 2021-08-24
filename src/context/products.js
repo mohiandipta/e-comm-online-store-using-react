@@ -4,7 +4,7 @@ import axios from 'axios'
 import url from '../utils/URL'
 export const ProductContext = React.createContext();
 
-//Provider, Consumer, useContext()
+// Provider, Consumer, useContext()
 
 const ProductProvider = ({ children }) => {
     const [loading, setLoading] = React.useState(false);
@@ -13,10 +13,14 @@ const ProductProvider = ({ children }) => {
 
     // useEffect() hook
     React.useEffect(() => {
-        axios.get(`${url}/products`).then(storeProducts => console.log(storeProducts))
-        return () => {
-        }
-    })
+        setLoading(true)
+        axios
+            .get(`${url}/products`).then(response => {
+                setProducts(response.data);
+                setLoading(false)
+            })
+        return () => { };
+    }, []);
 
 
     return (
