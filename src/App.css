@@ -46,11 +46,12 @@
 }
 
 header {
+  background-color: #ffffff;
   position: fixed;
   top: 0;
-  left: -40px;
+  /* left: -40px; */
   width: 100%;
-  padding: 40px 100px;
+  padding: 20px 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,9 +93,9 @@ header ul li :hover {
   background-color: #61dafb;
 }
 
-.about {
-  height: 550px;
-  width: 550px;
+.about-us {
+  padding-left: 260px;
+  padding-right: 260px;
 }
 
 .banner-img {
