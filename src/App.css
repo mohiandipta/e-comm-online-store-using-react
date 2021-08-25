@@ -126,3 +126,34 @@ header ul li :hover {
 .loading-gif {
   height: 300px;
 }
+
+.products-center {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 70px;
+  padding: 55px;
+}
+
+.product {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 0px 10px #282c3488;
+}
+
+.img-container img {
+  height: 150px;
+}
+
+.btn-product-details {
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 7px;
+  margin-top: 15px;
+  /* margin-left: -1200px; */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: crimson;
+  display: inline-block;
+}
