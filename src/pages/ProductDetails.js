@@ -4,5 +4,9 @@ import { useParams } from 'react-router-dom'
 export default function ProductDetails() {
     const { id } = useParams();
 
-    return <h1>Hello from Product Details page.product id is :{id}</h1>;
+    return (
+        <div>
+            <h1>Hello from Product Details page.product id is {id}</h1>
+        </div>
+    )
 }

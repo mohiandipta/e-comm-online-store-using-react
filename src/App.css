@@ -51,11 +51,12 @@ header {
   top: 0;
   /* left: -40px; */
   width: 100%;
-  padding: 20px 150px;
+  padding: 5px 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+  box-shadow: 0px 5px 20px #00000031;
 }
 
 header ul {
@@ -99,9 +100,9 @@ header ul li :hover {
 }
 
 .banner-img {
-  margin-top: -50px;
+  margin-top: -100px;
   height: 850px;
-  width: 1920px;
+  width: 1903px;
 }
 
 .banner {
@@ -156,4 +157,8 @@ header ul li :hover {
   color: #ffffff;
   background-color: crimson;
   display: inline-block;
+}
+
+.featured-products {
+  margin-top: 400px;
 }

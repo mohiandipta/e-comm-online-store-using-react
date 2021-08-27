@@ -8,7 +8,7 @@ const Product = ({ image, title, id, price }) => {
             <div className="img-container">
                 <img src={url} alt={title} />
                 <div>
-                    <Link to={`products/${id}`} className="btn-product-details">details</Link>
+                    <Link to={`/productdetails/${id}`} className="btn-product-details">details</Link>
                 </div>
                 <div className="product-footer">
                     <p className="product-title">{title}</p>
