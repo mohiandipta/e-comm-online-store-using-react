@@ -17,7 +17,8 @@ const ProductProvider = ({ children }) => {
         setLoading(true)
         axios
             .get(`${url}/products`).then(response => {
-                const featured = FeaturedProducts(response.data)
+                const featured =
+                    FeaturedProducts(response.data)
                 setProducts(response.data);
                 setFeatured(featured)
                 setLoading(false)
