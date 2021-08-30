@@ -1,3 +1,15 @@
+# Screenshots
+## Home page
+![](screenshot/Screenshot(1).png)
+## About page
+![](screenshot/Screenshot(2).png)
+## All product page
+![](screenshot/Screenshot(3).png)
+## Error page
+![](screenshot/Screenshot(4).png)
+#
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
